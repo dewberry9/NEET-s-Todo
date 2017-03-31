@@ -1,0 +1,180 @@
+body {
+    width: 100%;
+    height: 100%;
+    font-family: 'Nanum Barun Gothic';
+}
+
+.header {
+    position: fixed;
+}
+
+.sidebar {
+    background-color: #2d442c;
+    height: 100vh;
+}
+
+.sidebar .title {
+    margin: 0 auto;
+    width: 90%;
+    height: 60px;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    text-align: right;
+}
+
+.sidebar .title h1 {
+    font-weight: 200;
+    font-size: 2.4em;
+    color: #fff;
+    margin: 0;
+    line-height: 1em;
+}
+
+.sidebar .title h2 {
+    font-weight: 700;
+    font-size: 1.2em;
+    color: #fff;
+    margin: 0;
+}
+
+.content {
+    width: 100%;
+    height: 100%;
+    padding: 48px;
+}
+
+.content h3 {
+    font-weight: 200;
+    font-size: 4em;
+    color: #333333;
+}
+
+ul {
+    list-style: none;
+    padding-left: 0.8em;
+}
+
+.todo-title {
+    font-weight: 700;
+    font-size: 0.9em;
+    color: #666666;
+    margin: 0;
+}
+
+.todo-content {
+    font-weight: 400;
+    font-size: 1.1em;
+    color: #333333;
+    margin: 8px 0;
+    padding-left: 0.8em;
+}
+
+.buttons {
+    padding-left: 0.8em;
+}
+
+.modify-form p {
+    height: 36px;
+}
+
+.submit-button {
+    float: right;
+    background-color: #35cc55;
+    display: block;
+}
+
+.delete-button {
+    font-size: 30% !important;
+    color: #fff;
+    background-color: #C63A3A;
+}
+
+.cancel-button, .modify-button {
+    font-size: 30% !important;
+}
+
+.todo-line {
+    border: none;
+    border-top: 1px solid lightgray;
+    margin: 32px 0;
+}
+
+@media screen and (max-width: 48em) {
+    .pure-u-1-5, .pure-u-3-5 {
+        width: 100%;
+    }
+
+    .header {
+        position: relative;
+    }
+
+    .sidebar {
+        float: none;
+        height: 72px;
+        display: block;
+    }
+
+    .sidebar .title {
+        height: 42px;
+    }
+
+    .sidebar .title h1 {
+        font-size: 1.6em;
+        line-height: 1em;
+    }
+
+    .sidebar .title h2 {
+        font-size: 0.8em;
+    }
+
+    .content {
+        width: auto;
+        padding: 8px;
+    }
+
+    .content h3 {
+        font-size: 2.4em;
+        margin: 0;
+    }
+    
+    ul {
+        padding-left: 0;
+    }
+
+    .todo-title {
+        font-size: 0.6em;
+    }
+
+    .todo-content {
+        font-weight: 400;
+        font-size: 0.8em;
+        margin: 4px 0;
+        padding-left: 0.4em;
+    }
+
+    .buttons {
+        padding-left: 0.4em;
+    }
+
+    .submit-button {
+        font-size: 80% !important;
+    }
+
+    .todo-line {
+        margin: 16px 0;
+    }
+
+    .modify-form p {
+        height: 8px;
+    }
+
+    .modify-form .submit-button {
+        position: relative;
+        top: -24px;
+    }
+
+    form {
+        font-size: 0.8em;
+    }
+}
